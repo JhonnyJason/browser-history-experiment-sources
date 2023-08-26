@@ -1,0 +1,58 @@
+// appsimulation styles
+#appsimulation
+    position relative
+    width 100%
+    height 100%
+    padding 25px
+    box-sizing: border-box
+
+#app-unmodifier
+    display none
+    position: absolute
+    bottom 0
+    left 0
+    width 100%
+    height 25%
+    background-color alpha(red, 0.2)
+
+#app-button-grid    
+    display grid
+    grid-template-columns: 1fr 1fr
+    grid-gap 25px
+    button
+        background-color: cd-flash
+        height 40px
+        line-height: 40px
+        border-radius: 3px
+
+#app-content
+    position: absolute
+    bottom 20px
+    left 0
+    width 100%
+    color cd-foreground
+    font-weight: bold
+    grid-column: span 2
+    line-height: 150%
+
+
+
+#appsimulation.menu-on
+    #app-unmodifier
+        display block
+
+#appsimulation.popup-on
+    #app-unmodifier
+        display block
+
+
+#appsimulation.root
+    #app-button-grid    
+        #root-state-button
+            pointer-events: none
+            opacity: 0.5
+
+#appsimulation.next
+    #app-button-grid    
+        button
+            color white

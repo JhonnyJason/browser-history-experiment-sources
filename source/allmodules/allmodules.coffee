@@ -1,9 +1,17 @@
-import configmodule from "./configmodule"
-import debugmodule from "./debugmodule"
+import * as appcoremodule from "./appcoremodule.js"
+import * as appsimulationmodule from "./appsimulationmodule.js"
+import * as debugmodule from "./debugmodule.js"
+import * as navmodule from "./navmodule.js"
+import * as statemodule from "./statemodule.js"
+import * as uistatemodule from "./uistatemodule.js"
 
 Modules = {
-    configmodule,
-    debugmodule
+    appcoremodule,
+    appsimulationmodule,
+    debugmodule,
+    navmodule,
+    statemodule,
+    uistatemodule,
 }
 
 export default Modules
